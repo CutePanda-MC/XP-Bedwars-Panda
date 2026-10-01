@@ -44,8 +44,8 @@ export function normalize(value) {
 export function areArraysEqualUnordered(arr1, arr2) {
     if ( !arr1 && !arr2 ) return true;
     if( !arr1 || !arr2 ) return false;
-    if( arr1 === [] && arr2 === [] ) return true;
     if( !Array.isArray(arr1) || !Array.isArray(arr2) ) return false;
+    if( arr1.length === 0 && arr2.length === 0 ) return true;
     if (arr1.length !== arr2.length) return false;
 
     const countMap = new Map();
@@ -100,8 +100,8 @@ export function deepEqual(a, b) {
 export function areArraysEqualOrdered(arr1, arr2) {
     if ( !arr1 && !arr2 ) return true;
     if( !arr1 || !arr2 ) return false;
-    if( arr1 === [] && arr2 === [] ) return true;
     if( !Array.isArray(arr1) || !Array.isArray(arr2) ) return false;
+    if( arr1.length === 0 && arr2.length === 0 ) return true;
     if (arr1.length !== arr2.length) return false;
     for (let i = 0; i < arr1.length; i++) {
         if (!deepEqual(arr1[i], arr2[i])) return false;
@@ -1093,7 +1093,6 @@ export function eachValidPlayer( callback ) {
  * @param {function(BedwarsTeam): void} callback - 一个接受 BedwarsTeam 类型参数的函数
  */
 export function eachTeam( callback ) {
-world.sendMessage("1.01")
     map().teamList.forEach( team => { callback( team ) } )
 }
 

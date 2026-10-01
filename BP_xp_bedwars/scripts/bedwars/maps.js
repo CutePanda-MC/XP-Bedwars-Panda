@@ -89,7 +89,7 @@ export class BedwarsMap{
 
     /** 【属性】游戏事件，包括下一个事件的倒计时、下一个事件的ID、下一个事件的名称 */
     gameEvent = {
-        /** 下一个事件的倒计时，单位：游戏刻 */ nextEventCountdown: 6000,
+        /** 下一个事件的倒计时，单位：游戏刻 */ nextEventCountdown: 60,
         /** 下一个事件的ID */ nextEventId: "diamond_tier_2",
         /** 下一个事件的名称 */ nextEventName: "钻石生成点 II 级"
     };
@@ -477,7 +477,7 @@ export class BedwarsMap{
                 world.sendMessage( { translate: "message.diamondSpawnerUpgradedToTier2" } )
                 this.spawnerInfo.diamondLevel = 2;
                 this.gameEvent.nextEventId = "health_tier_1";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 60
                 break;
             case "health_tier_1":
                 world.sendMessage( "§c生命上限§e已提升至§bI§e级！" ) //由于微软发电，导致语言文件出问题了，所以这里直接用字符串
@@ -486,13 +486,13 @@ export class BedwarsMap{
                     player.getComponent("minecraft:health").resetToMaxValue()
                 })
                 this.gameEvent.nextEventId = "emerald_tier_2";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 60
                 break;
             case "emerald_tier_2":
                 world.sendMessage( { translate: "message.emeraldSpawnerUpgradedToTier2" } )
                 this.spawnerInfo.emeraldLevel = 2;
                 this.gameEvent.nextEventId = "before.random_event_1";
-                this.gameEvent.nextEventCountdown = 5800
+                this.gameEvent.nextEventCountdown = 58
                 break;
             case "before.random_event_1":
                 this.randomEvent( 1 )
@@ -502,14 +502,14 @@ export class BedwarsMap{
             case "random_event_1":
                 this.triggerRandomEvent()
                 this.gameEvent.nextEventId = "diamond_tier_3";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 600
                 break;
             case "diamond_tier_3":
                 this.randomEventInfo.triggered = false
                 world.sendMessage( { translate: "message.diamondSpawnerUpgradedToTier3" } )
                 this.spawnerInfo.diamondLevel = 3;
                 this.gameEvent.nextEventId = "health_tier_2";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 60
                 break;
             case "health_tier_2":
                 world.sendMessage( "§c生命上限§e已提升至§bII§e级！" )
@@ -518,13 +518,13 @@ export class BedwarsMap{
                     player.getComponent("minecraft:health").resetToMaxValue()
                 })
                 this.gameEvent.nextEventId = "emerald_tier_3";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 60
                 break;
             case "emerald_tier_3":
                 world.sendMessage( { translate: "message.emeraldSpawnerUpgradedToTier3" } )
                 this.spawnerInfo.emeraldLevel = 3;
                 this.gameEvent.nextEventId = "before.random_event_2";
-                this.gameEvent.nextEventCountdown = 5800
+                this.gameEvent.nextEventCountdown = 58
                 break;
             case "before.random_event_2":
                 this.randomEvent( 1 )
@@ -534,7 +534,7 @@ export class BedwarsMap{
             case "random_event_2":
                 this.triggerRandomEvent()
                 this.gameEvent.nextEventId = "bed_destruction";
-                this.gameEvent.nextEventCountdown = 6000
+                this.gameEvent.nextEventCountdown = 600
                 break;
             case "bed_destruction":
 
@@ -788,6 +788,9 @@ export class BedwarsMap{
         world.gameRules.pvp = true;
         eachValidPlayer( player => {
             /** @type {BedwarsPlayer} */ let playerInfo = player.bedwarsInfo
+
+            /** 清除物品 */
+            player.getComponent( "minecraft:inventory" ).container.setItem( 4, undefined )
 
             /** 将玩家传送到队伍中 */
             if(playerInfo.teleportPlayerToSpawnpoint()===false)world.sendMessage(`error`)

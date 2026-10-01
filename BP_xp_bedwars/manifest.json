@@ -1,11 +1,11 @@
 {
     "format_version": 2,
     "header": {
-        "name": "§eHelloSlime§r的§5起床战争 经验模式 §6行为包§r!",
+        "name": "test",
         "description": "由 B站@一只卑微的量筒 制作原包，由 B站@CutePanda-MC 制作此改版",
         "uuid": "9e5e3f01-88fa-4f41-8eed-ffbd758a0b9b",
         "version": [ 1, 1, 0 ],
-        "min_engine_version": [ 26, 51 ]
+        "min_engine_version": [1,21,130]
         
     },
     "modules": [

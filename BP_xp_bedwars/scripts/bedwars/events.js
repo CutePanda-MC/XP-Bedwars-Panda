@@ -1167,8 +1167,10 @@ export function commandEvent(event){
             if(player.commandPermissionLevel >= 2){
                 system.run(() => {
                     constants.overworld.runCommand( "gametest run newTest:test")
-                    newBot(player.location, mesg[1] == undefined|""? 1 : mesg[1]);
                 });
+                system.runTimeout(() => {
+                    newBot(player.location, mesg[1] == undefined|""? 1 : mesg[1]);
+                },5)
                 event.cancel = true;
             }
             break;

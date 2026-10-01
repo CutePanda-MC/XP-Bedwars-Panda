@@ -6,11 +6,11 @@ function lib/init/gamerule
 function lib/init/scoreboard
 
 # --- 清除玩家物品 ---
-# clear @a
-# execute as @a run function lib/modify_data/reset_ender_chest
+clear @a
+execute as @a run function lib/modify_data/reset_ender_chest
 
 # --- 生成等待大厅 ---
-# structure load hypixel:waiting_hall -12 300 -12
+structure load hypixel:waiting_hall -12 300 -12
 
 # --- 设置玩家出生点 ---
-# setworldspawn 0 304 0
+setworldspawn 0 304 0
