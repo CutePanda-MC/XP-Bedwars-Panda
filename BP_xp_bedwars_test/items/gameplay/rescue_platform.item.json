@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:rescue_platform",
+            "menu_category": {
+                "category": "items"
+            },
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:icon": "bedwars_rescue_platform",
+            "minecraft:display_name": {
+                "value": "救援平台"
+            },
+            "minecraft:cooldown": {
+                "category": "rescue_platform",
+                "duration": 15
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:interact_button":"使用"
+        }
+    }
+}

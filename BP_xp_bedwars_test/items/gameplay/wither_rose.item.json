@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:wither_rose",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "wither_rose",
+            "minecraft:should_despawn": false,
+            "minecraft:display_name": {
+                "value": "凋零玫瑰"
+            }
+        }
+    }
+}

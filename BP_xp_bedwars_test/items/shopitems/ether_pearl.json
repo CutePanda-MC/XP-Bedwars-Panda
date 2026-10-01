@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_ether_pearl",
+            "menu_category": {
+                "category": "items"
+            },
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:icon": "ether_pearl",
+            "minecraft:display_name": {
+                "value": "以太珍珠"
+            }
+        }
+    }
+}

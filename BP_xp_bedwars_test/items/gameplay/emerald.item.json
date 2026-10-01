@@ -1,0 +1,22 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:emerald_use",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "bedwars_emerald",
+            "minecraft:should_despawn": false,
+            "minecraft:use_modifiers": {
+                "use_duration": 0.05,
+                "emit_vibrations": true,
+                "movement_modifier": 1
+            },
+            "minecraft:use_animation":"none",
+            "minecraft:display_name": {
+                "value": "绿宝石"
+            }
+        }
+    }
+}

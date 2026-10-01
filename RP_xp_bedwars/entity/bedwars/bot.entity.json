@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:bot",
+            "materials": { "default": "entity_alphatest" },
+            "textures": {
+                "skin_0": "textures/entity/bot/skin_0",
+                "skin_1": "textures/entity/bot/skin_1",
+                "skin_2": "textures/entity/bot/skin_2",
+                "skin_3": "textures/entity/bot/skin_3",
+                "skin_4": "textures/entity/bot/skin_4",
+                "skin_5": "textures/entity/bot/skin_5",
+                "skin_6": "textures/entity/bot/skin_6",
+                "skin_7": "textures/entity/bot/skin_7",
+                "skin_8": "textures/entity/bot/skin_8",
+                "skin_9": "textures/entity/bot/skin_9",
+                "skin_10": "textures/entity/bot/skin_10",
+                "skin_11": "textures/entity/bot/skin_11",
+                "skin_12": "textures/entity/bot/skin_12",
+                "skin_13": "textures/entity/bot/skin_13",
+                "skin_14": "textures/entity/bot/skin_14",
+                "skin_15": "textures/entity/bot/skin_15",
+                "skin_16": "textures/entity/bot/skin_16",
+                "skin_17": "textures/entity/bot/skin_17",
+                "skin_18": "textures/entity/bot/skin_18",
+                "skin_19": "textures/entity/bot/skin_19",
+                "skin_20": "textures/entity/bot/skin_20",
+                "skin_21": "textures/entity/bot/skin_21",
+                "skin_22": "textures/entity/bot/skin_22",
+                "skin_23": "textures/entity/bot/skin_23",
+                "skin_24": "textures/entity/bot/skin_24",
+                "skin_25": "textures/entity/bot/skin_25",
+                "skin_26": "textures/entity/bot/skin_26",
+                "skin_27": "textures/entity/bot/skin_27",
+                "skin_28": "textures/entity/bot/skin_28",
+                "skin_29": "textures/entity/bot/skin_29",
+                "skin_30": "textures/entity/bot/skin_30",
+                "skin_31": "textures/entity/bot/skin_31"
+            },
+            "geometry": {
+                "default": "geometry.humanoid_default",
+                "slim": "geometry.humanoid_slim"
+            },
+            "render_controllers": [ "controller.render.bot" ],
+            
+            "spawn_egg": { "base_color": "#ffbf00", "overlay_color": "#ffa600" }
+        }
+    }
+}

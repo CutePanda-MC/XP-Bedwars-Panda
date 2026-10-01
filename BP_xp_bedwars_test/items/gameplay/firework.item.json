@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:firework"
+        },
+        "components": {
+            "minecraft:cooldown": { "category": "firework", "duration": 7.5 },
+            "minecraft:icon": "bedwars_firework",
+            "minecraft:display_name": {
+                "value": "窜天猴"
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:interact_button":"一键升空"
+        }
+    }
+}

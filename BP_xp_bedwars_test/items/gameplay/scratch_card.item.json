@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:scratch_card",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:food": { "can_always_eat": true },
+            "minecraft:display_name": {
+                "value": "刮刮乐"
+            },
+            "minecraft:use_modifiers": { "use_duration": 1.6, "movement_modifier": 0.4 },
+            "minecraft:icon": "scratch_card",
+            "minecraft:use_animation": "eat"
+        }
+    }
+}

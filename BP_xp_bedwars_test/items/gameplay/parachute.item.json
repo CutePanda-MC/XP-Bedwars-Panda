@@ -1,0 +1,17 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:parachute",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "降落伞"
+            },
+            "minecraft:use_modifiers": { "use_duration": 10, "movement_modifier": 0.5 },
+            "minecraft:icon": "parachute",
+            "minecraft:use_animation": "brush"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_tp_scroll_1",
+            "menu_category": {"category": "items"}
+        },
+        "components": {
+            "minecraft:icon": "bedwars_tp_scroll_1",
+            "minecraft:display_name": {
+                "value": "§2回城卷轴"
+            }
+        }
+    }
+}

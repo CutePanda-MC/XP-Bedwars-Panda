@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:category_rotating",
+            "menu_category": {
+                "category": "items",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": "rotating",
+            "minecraft:glint": true,
+            "minecraft:display_name": {
+                "value": "轮换物品\n§e限时出售!"
+            }
+        }
+    }
+}

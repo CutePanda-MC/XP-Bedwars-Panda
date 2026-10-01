@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:trampoline",
+            "menu_category": {
+                "category": "items"
+            },
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:icon": "trampoline",
+            "minecraft:display_name": {
+                "value": "蹦床"
+            },
+            "minecraft:cooldown": {
+                "category": "trampoline",
+                "duration": 20
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:interact_button":"使用"
+        }
+    }
+}

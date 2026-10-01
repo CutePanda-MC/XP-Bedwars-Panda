@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:flying_cloud",
+            "menu_category": {
+                "category": "items"
+            },
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:icon": "flying_cloud",
+            "minecraft:display_name": {
+                "value": "筋斗云"
+            },
+            "minecraft:cooldown": {
+                "category": "flying_cloud",
+                "duration": 30
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:interact_button":"使用"
+        }
+    }
+}

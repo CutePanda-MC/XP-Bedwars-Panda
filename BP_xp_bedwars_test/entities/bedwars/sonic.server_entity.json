@@ -1,0 +1,37 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:sonic_bomb",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+    
+        "components": {
+            "minecraft:collision_box": { "width": 0.5, "height": 0.5 },
+            "minecraft:health": { "value": 1, "max": 1 },
+            "minecraft:knockback_resistance": { "value": 1.0 },
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] },
+            "minecraft:projectile": {
+                "power": 100,
+                "gravity": 0.00,
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "uncertainty_base": 0,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "offset": [ 0, 0, 0 ],
+                "reflect_on_hurt": true,
+                "catch_fire": true,
+                "ignored_entities": [
+                    "bedwars:trader"
+                ]
+            },
+            "minecraft:physics": { },
+            "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+            "minecraft:conditional_bandwidth_optimization": { "default_values": { "max_optimized_distance": 80.0, "max_dropped_ticks": 7, "use_motion_prediction_hints": true } }
+        }
+    }
+}
+    

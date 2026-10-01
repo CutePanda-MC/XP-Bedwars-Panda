@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:category_traps",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "bedwars_upgrade_alarm_trap",
+            "minecraft:display_name": {
+                "value": "陷阱购买\n§e守株待兔."
+            }
+        }
+    }
+}

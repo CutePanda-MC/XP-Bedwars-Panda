@@ -1,0 +1,49 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§eHelloSlime§r的§5起床战争 经验模式 §6行为包§r!",
+        "description": "由 B站@一只卑微的量筒 制作原包，由 B站@CutePanda-MC 制作此改版",
+        "uuid": "9e5e3f01-88fa-4f41-8eed-ffbd758a0b9b",
+        "version": [ 1, 1, 0 ],
+        "min_engine_version": [ 26, 51 ]
+        
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "57fde9f3-3bce-4be6-87fe-d9bf82b2cb2f",
+            "version": [ 1, 1, 0 ]
+        },
+        {
+            "type": "script",
+            "uuid": "f5726f2d-73a2-44b0-94bf-3c4d9eda1cf5",
+            "version": [ 1, 1, 0 ],
+            "entry": "scripts/bedwars/main.js"
+        }
+    ],
+    "metadata": {
+        "authors": [ "Panda" ]
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-gametest",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-admin",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/common",
+            "version": "1.2.0"
+        }
+    ]
+}

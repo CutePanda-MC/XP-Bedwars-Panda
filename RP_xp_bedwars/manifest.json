@@ -1,0 +1,26 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§5起床战争 经验模式 §6资源包§r!",
+        "description": "由 B站@一只卑微的量筒 制作原包，由 B站@CutePanda-MC 制作此改版",
+        "uuid": "6934737c-d77b-41c5-a426-baad28afe291",
+        "version": [ 1, 0, 4 ],
+        "min_engine_version": [ 1, 21, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "73b4f5ef-d1ec-40cd-b1ed-18475ea38dd6",
+            "version": [ 1, 0, 4 ]
+        }
+    ],
+    "metadata": {
+        "authors": [ "Panda" ]
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        }
+    ]
+}

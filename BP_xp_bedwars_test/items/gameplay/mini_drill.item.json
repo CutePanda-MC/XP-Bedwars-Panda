@@ -1,0 +1,22 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:mini_drill"
+        },
+        "components": {
+            "minecraft:icon": "mini_drill",
+            "minecraft:display_name": {
+                "value": "迷你钻头"
+            },
+            "minecraft:cooldown": {
+                "category": "mini_drill",
+                "duration": 30
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            }
+        }
+    }
+}

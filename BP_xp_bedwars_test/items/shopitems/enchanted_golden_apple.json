@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_enchanted_golden_apple",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "apple_golden",
+            "minecraft:display_name": {
+                "value": "附魔金苹果"
+            },
+            "minecraft:glint": true
+        }
+    }
+}

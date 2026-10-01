@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:iron_ingot",
+            "materials": {
+                 "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/iron_ingot"
+            },
+            "geometry": {
+                "default": "geometry.resource_item_ingot"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

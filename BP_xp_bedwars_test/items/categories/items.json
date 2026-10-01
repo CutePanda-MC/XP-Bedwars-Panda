@@ -1,0 +1,15 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:category_items",
+            "menu_category": {"category": "items","is_hidden_in_commands": false}
+        },
+        "components": {
+            "minecraft:icon": "bedwars_eye",
+            "minecraft:display_name": {
+                "value": "道具\n§e事情变得更有趣了呢."
+            }
+        }
+    }
+}

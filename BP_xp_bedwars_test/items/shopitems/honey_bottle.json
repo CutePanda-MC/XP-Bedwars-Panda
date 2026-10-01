@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_honey_bottle",
+            "menu_category": { "category": "items", "group": "itemGroup.name.potion", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a蜂蜜瓶"
+            },
+            "minecraft:icon": "bedwars_honey_bottle"
+        }
+    }
+}

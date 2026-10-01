@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_wind_charge",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "bedwars_wind_charge",
+            "minecraft:display_name": {
+                "value": "§2风弹"
+            }
+        }
+    }
+}

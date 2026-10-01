@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_mini_drill"
+        },
+        "components": {
+            "minecraft:icon": "mini_drill",
+            "minecraft:display_name": {
+                "value": "§a迷你钻头"
+            }
+        }
+    }
+}

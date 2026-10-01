@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:prohibited"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§c此槽位未解锁"
+            },
+            "minecraft:icon": "prohibited"
+        }
+    }
+}

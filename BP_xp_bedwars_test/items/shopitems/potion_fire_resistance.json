@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_potion_fire_resistance",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false, "group": "itemGroup.name.potion" }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§2抗火药水"
+            },
+            "minecraft:icon": "bedwars_potion_fire_resistance"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:category_upgrades",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:icon": "bedwars_shopitem_iron_armor",
+            "minecraft:display_name": {
+                "value": "团队升级\n§e更强力的装备!"
+            }
+        }
+    }
+}

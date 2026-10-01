@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:netherite_sword",
+            "menu_category": { "category": "equipment", "group": "itemGroup.name.sword", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:display_name": {
+                "value": "下界合金剑"
+            },
+            "minecraft:damage": { "value": 8 },
+            "minecraft:enchantable": { "slot": "sword", "value": 10 },
+            "minecraft:hand_equipped": true,
+            "minecraft:icon": "bedwars_netherite_sword",
+            "minecraft:max_stack_size": 1,
+            "minecraft:digger": {
+                "destroy_speeds": [
+                    { "block": "minecraft:web", "speed": 16}
+                ]
+            }
+        }
+    }
+}

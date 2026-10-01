@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:flying_cloud",
+            "materials": { "default": "entity_alphatest" },
+            "textures": {
+                "default": "textures/entity/flying_cloud"
+            },
+            "geometry": {
+                "default": "geometry.flying_cloud"
+            },
+            "render_controllers": [ "controller.render.resource_spawner" ],
+            
+            "spawn_egg": { "base_color": "#e8b211", "overlay_color": "#47f118" }
+        }
+    }
+}

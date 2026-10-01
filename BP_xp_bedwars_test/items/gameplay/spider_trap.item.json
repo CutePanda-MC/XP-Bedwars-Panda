@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:spider_trap"
+        },
+        "components": {
+            "minecraft:icon": "spider_trap",
+            "minecraft:display_name": {
+                "value": "蛛网陷阱"
+            },
+            "minecraft:cooldown": {
+                "category": "spider_trap",
+                "duration": 7.5
+            }
+        }
+    }
+}

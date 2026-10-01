@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:se_anvil",
+            "materials": { "default": "entity_alphatest" },
+            "textures": {
+                "default": "textures/entity/anvil"
+            },
+            "geometry": {
+                "default": "geometry.anvil"
+            },
+            "render_controllers": [ "controller.render.default" ],
+            "scripts": { "scale": "0.03125" }
+        }
+    }
+}

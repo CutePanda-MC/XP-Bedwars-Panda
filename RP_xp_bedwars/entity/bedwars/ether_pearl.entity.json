@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:ether_pearl",
+            "materials": { "default": "snowball" },
+            "textures": { "default": "textures/items/ether_pearl" },
+            "geometry": { "default": "geometry.item_sprite" },
+            "animations": { "flying": "animation.actor.billboard" },
+            "scripts": { "animate": [ "flying" ], "scale": "(4.0)" },
+            "render_controllers": [ "controller.render.item_sprite" ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_seven_deadly_sins",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a七宗罪"
+            },
+            "minecraft:icon": "bedwars_seven_deadly_sins"
+        }
+    }
+}

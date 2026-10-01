@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_spider_trap"
+        },
+        "components": {
+            "minecraft:icon": "spider_trap",
+            "minecraft:display_name": {
+                "value": "蛛网陷阱"
+            }
+        }
+    }
+}

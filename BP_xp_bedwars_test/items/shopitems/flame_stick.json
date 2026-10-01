@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_flame_stick"
+        },
+        "components": {
+            "minecraft:icon": "bedwars_blaze_rod",
+            "minecraft:glint": true,
+            "minecraft:display_name": {
+                "value": "§b烈焰棒\n§7火焰附加 I"
+            }
+        }
+    }
+}

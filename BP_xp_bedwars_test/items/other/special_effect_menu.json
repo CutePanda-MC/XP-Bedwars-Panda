@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:special_effect_menu",
+            "menu_category": {
+                "category": "items"
+            },
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:icon": "special_effect_menu",
+            "minecraft:display_name": {
+                "value": "§d特效§b菜单"
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:interact_button":"打开菜单"
+        }
+    }
+}

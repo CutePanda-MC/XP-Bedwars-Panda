@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_bow_power_punch_fire",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a弓"
+            },
+            "minecraft:glint": true,
+            "minecraft:icon": "bedwars_shopitem_bow"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:se_anvil",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:type_family": { "family": [ "special_effects" ] },
+            "minecraft:health": { "value": 1, "max": 1 },
+            "minecraft:collision_box": { "height": 0, "width": 0 },
+            "minecraft:nameable": { "always_show": true, "allow_name_tag_renaming": true },
+            "minecraft:physics": {
+                "has_gravity": true
+            },
+            "minecraft:knockback_resistance": { "value": 1.0 },
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] }
+        }
+    }
+}

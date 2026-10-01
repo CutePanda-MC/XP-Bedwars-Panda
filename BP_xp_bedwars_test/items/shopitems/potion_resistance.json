@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_potion_resistance",
+            "menu_category": { "category": "items", "group": "itemGroup.name.potion", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a抗性药水"
+            },
+            "minecraft:icon": "bedwars_potion_resistance"
+        }
+    }
+}

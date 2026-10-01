@@ -1,0 +1,17 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:fireball"
+        },
+        "components": {
+            "minecraft:cooldown": { "category": "fireball", "duration": -1 },
+            "minecraft:use_modifiers": {
+                "use_duration": 0,
+                "movement_modifier": 1
+            },
+            "minecraft:use_animation": "none",
+            "minecraft:icon": "bedwars_fireball"
+        }
+    }
+}

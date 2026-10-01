@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:divider"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "我是分割板(^-w-^)"
+            },
+            "minecraft:icon": "divider"
+        }
+    }
+}
