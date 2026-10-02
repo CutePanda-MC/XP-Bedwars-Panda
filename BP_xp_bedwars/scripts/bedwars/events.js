@@ -1164,7 +1164,7 @@ export function commandEvent(event){
     const command = mesg[0]
     switch(command){
         case "#makebot":
-            if(player.commandPermissionLevel >= 1){
+            if(player.commandPermissionLevel >= 2){
                 system.run(() => {
                     constants.overworld.runCommand( "gametest run newTest:test")
                 });
@@ -1175,7 +1175,7 @@ export function commandEvent(event){
             }
             break;
         case "#fly":
-            if(player.commandPermissionLevel >= 1||player.bedwarsInfo){
+            if(player.commandPermissionLevel >= 2||player.bedwarsInfo){
                 if( mesg[1] === "true" ){
                     system.run(() => {
                         player.triggerEvent("fly_enabled")
@@ -1197,7 +1197,7 @@ export function commandEvent(event){
             }
             break;
         case "#reset":
-            if(player.commandPermissionLevel >= 1){
+            if(player.commandPermissionLevel >= 2){
                 system.run(() => {
                     player.sendMessage("重置状态中...")
                     player.triggerEvent("fly_disabled")
@@ -1206,7 +1206,7 @@ export function commandEvent(event){
             }
             break;
         case "#money":
-            if(player.commandPermissionLevel >= 1){
+            if(player.commandPermissionLevel >= 2){
                 let operation = [ "add", "set", "take" ]
                 let moneyType = [ "coin", "diamond", "amethyst", "stardust" ]
                 let target = world.getPlayers({name: mesg[1]})[0]
@@ -1236,7 +1236,7 @@ export function commandEvent(event){
             }
             break;
         case "#specialEffect":
-            if(player.commandPermissionLevel >= 1){
+            if(player.commandPermissionLevel >= 2){
                 let target = world.getPlayers({name: mesg[1]})[0]
                 let operation = [ "add", "remove", "clear", "list" ]
                 let type = [ "final_kill" ]
@@ -2468,22 +2468,30 @@ export function hurtDealEvent( event ){
             }else if( attacker?.typeId === "minecraft:player" ){
                 if( attacker.bedwarsInfo.team === player.bedwarsInfo.team ){
                     event.cancel = true;
-                }
-            }else{
-                if( player.getComponent("minecraft:health").currentValue <= 0 && Ohand?.typeId !== "minecraft:totem_of_undying" && Mhand?.typeId !== "minecraft:totem_of_undying" ){
-                    event.cancel = true;
-                    if ( methods.playerIsValid( player ) ) {
-                        if ( [ "entityAttack", "projectile", "fall", "void", "entityExplosion" ].includes( cause ) ){
-                            playerInfo.deathState.deathType = cause 
-                        }else { 
-                            playerInfo.deathState.deathType = "other" 
+                    if( attacker.getComponent( "minecraft:equippable").getEquipment( EquipmentSlot.Mainhand ).typeId == "bedwars:flame_stick" ){
+                        let alrHasFire = player.getComponent("minecraft:is_ignited") == undefined ? false : true;
+                        system.run( () => {
+                            if( alrHasFire == false ){
+                                player.extinguishFire( false )
+                            }
+                        })
+                    }
+                }else{
+                    if( player.getComponent("minecraft:health").currentValue <= 0 && Ohand?.typeId !== "minecraft:totem_of_undying" && Mhand?.typeId !== "minecraft:totem_of_undying" ){
+                        event.cancel = true;
+                        if ( methods.playerIsValid( player ) ) {
+                            if ( [ "entityAttack", "projectile", "fall", "void", "entityExplosion" ].includes( cause ) ){
+                                playerInfo.deathState.deathType = cause 
+                            }else { 
+                                playerInfo.deathState.deathType = "other" 
+                            }
+                            system.runTimeout( ()=> {
+                                attacker?.typeId === "minecraft:player"? attacker.playSound("random.orb", { location: attacker.location, volume: 9, pitch: 1 }) : null
+                                constants.overworld.playSound( "game.player.hurt", player.location,{ volume: 15, pitch: 1 } )
+                                playerInfo.beforePlayerDied(killer)
+                                playerInfo.playerDied( killer )
+                            },1)
                         }
-                        system.runTimeout( ()=> {
-                            attacker?.typeId === "minecraft:player"? attacker.playSound("random.orb", { location: attacker.location, volume: 9, pitch: 1 }) : null
-                            constants.overworld.playSound( "game.player.hurt", player.location,{ volume: 15, pitch: 1 } )
-                            playerInfo.beforePlayerDied(killer)
-                            playerInfo.playerDied( killer )
-                        },1)
                     }
                 }
             }
@@ -2801,6 +2809,7 @@ export function playerDieEvent( event ) {
         /** @type {methods.BedwarsPlayer} */ let playerInfo = player.bedwarsInfo;
         if ( [ "entityAttack", "projectile", "fall", "void", "entityExplosion" ].includes( deathType ) ) { playerInfo.deathState.deathType = deathType }
         else { deathType = "other" }
+        playerInfo.beforePlayerDied( killer )
         playerInfo.playerDied( killer )
     }
     /** 如果仅剩一个队伍存活，则该队伍获胜 */
