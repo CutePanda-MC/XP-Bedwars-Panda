@@ -1164,7 +1164,7 @@ export function commandEvent(event){
     const command = mesg[0]
     switch(command){
         case "#makebot":
-            if(player.commandPermissionLevel >= 2){
+            if(player.commandPermissionLevel >= 1){
                 system.run(() => {
                     constants.overworld.runCommand( "gametest run newTest:test")
                 });
@@ -1175,7 +1175,7 @@ export function commandEvent(event){
             }
             break;
         case "#fly":
-            if(player.commandPermissionLevel >= 2||player.bedwarsInfo){
+            if(player.commandPermissionLevel >= 1||player.bedwarsInfo){
                 if( mesg[1] === "true" ){
                     system.run(() => {
                         player.triggerEvent("fly_enabled")
@@ -1197,7 +1197,7 @@ export function commandEvent(event){
             }
             break;
         case "#reset":
-            if(player.commandPermissionLevel >= 2){
+            if(player.commandPermissionLevel >= 1){
                 system.run(() => {
                     player.sendMessage("重置状态中...")
                     player.triggerEvent("fly_disabled")
@@ -1206,7 +1206,7 @@ export function commandEvent(event){
             }
             break;
         case "#money":
-            if(player.commandPermissionLevel >= 2){
+            if(player.commandPermissionLevel >= 1){
                 let operation = [ "add", "set", "take" ]
                 let moneyType = [ "coin", "diamond", "amethyst", "stardust" ]
                 let target = world.getPlayers({name: mesg[1]})[0]
@@ -1236,7 +1236,7 @@ export function commandEvent(event){
             }
             break;
         case "#specialEffect":
-            if(player.commandPermissionLevel >= 2){
+            if(player.commandPermissionLevel >= 1){
                 let target = world.getPlayers({name: mesg[1]})[0]
                 let operation = [ "add", "remove", "clear", "list" ]
                 let type = [ "final_kill" ]
