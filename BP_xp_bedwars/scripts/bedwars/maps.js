@@ -464,6 +464,8 @@ export class BedwarsMap{
             case "diamond_tier_3": this.gameEvent.nextEventName = "钻石生成点 III 级"; return this.gameEvent.nextEventName;
             case "health_tier_2": this.gameEvent.nextEventName = "生命上限提升 II 级"; return this.gameEvent.nextEventName;
             case "emerald_tier_3": this.gameEvent.nextEventName = "绿宝石生成点 III 级"; return this.gameEvent.nextEventName;
+            case "before.random_event_2": this.gameEvent.nextEventName = "随机事件 II"; return this.gameEvent.nextEventName;
+            case "random_event_2": this.gameEvent.nextEventName = "随机事件 II"; return this.gameEvent.nextEventName;
             case "bed_destruction": this.gameEvent.nextEventName = "床自毁"; return this.gameEvent.nextEventName;
             case "death_match": this.gameEvent.nextEventName = "绝杀模式"; return this.gameEvent.nextEventName;
             case "game_end": default: this.gameEvent.nextEventName = "游戏结束"; return this.gameEvent.nextEventName;
