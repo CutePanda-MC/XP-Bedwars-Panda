@@ -1067,18 +1067,18 @@ export const teamUpgradeShopitems = [
             costResourceAmountInSolo: 64
         }),
         new Shopitem("unbreaking_tier_1", "team_upgrade", "diamond", 32, 1, {
-            description: "更加耐用的武器。\n§e> I阶: 武器获得耐久I附魔, §b32 钻石\n§7  II阶: 武器和工具获得耐久II附魔, §b64 钻石",
-            loreInSolo: "更加耐用的武器。\n§e> I阶: 武器获得耐久I附魔, §b32 钻石\n§7  II阶: 武器和工具获得耐久II附魔, §b64 钻石",
+            description: "更加耐用的武器。\n§e> I阶: 武器获得耐久I附魔, §b32 钻石\n§7  II阶: 武器获得耐久II附魔, §b64 钻石",
+            loreInSolo: "更加耐用的武器。\n§e> I阶: 武器获得耐久I附魔, §b32 钻石\n§7  II阶: 武器获得耐久II附魔, §b64 钻石",
             itemType: "teamUpgrade",
             tier: 1,
             isHighestTier: false,
             costResourceAmountInSolo: 32
         }),
         new Shopitem("unbreaking_tier_2", "team_upgrade", "diamond", 64, 2, {
-            description: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§e> II阶: 武器和工具获得耐久II附魔, §b64 钻石",
-            loreInSolo: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§e> II阶: 武器和工具获得耐久II附魔, §b64 钻石",
-            topLore: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§a✔ II阶: 武器和工具获得耐久II附魔, §b64 钻石\n§e  已满级",
-            topLoreInSolo: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§a✔ II阶: 武器和工具获得耐久II附魔, §b64 钻石\n§e  已满级",
+            description: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§e> II阶: 武器获得耐久II附魔, §b64 钻石",
+            loreInSolo: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§e> II阶: 武器获得耐久II附魔, §b64 钻石",
+            topLore: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§a✔ II阶: 武器获得耐久II附魔, §b64 钻石\n§e  已满级",
+            topLoreInSolo: "更加耐用的武器。\n§a✔ I阶: 武器获得耐久I附魔, §b32 钻石\n§a✔ II阶: 武器获得耐久II附魔, §b64 钻石\n§e  已满级",
             itemType: "teamUpgrade",
             tier: 2,
             isHighestTier: true,

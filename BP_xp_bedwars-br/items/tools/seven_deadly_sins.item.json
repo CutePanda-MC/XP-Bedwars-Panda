@@ -26,9 +26,7 @@
                     { "block": "minecraft:web", "speed": 16}
                 ]
             },
-            "minecraft:custom_components": [
-                "bedwars:durability_controller"
-            ]
+            "bedwars:durability_controller": {}
         }
     }
 }
