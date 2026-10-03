@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:upgrade_fire_aspect_tier_1",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a火焰附加"
+            },
+            "minecraft:icon": "bedwars_upgrade_fire_aspect"
+        }
+    }
+}

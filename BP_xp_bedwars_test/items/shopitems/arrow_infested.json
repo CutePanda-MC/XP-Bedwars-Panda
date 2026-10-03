@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:shopitem_arrow_infested",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false, "group": "itemGroup.name.potion" }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a虫蚀之箭"
+            },
+            "minecraft:icon": "bedwars_arrow_infested"
+        }
+    }
+}

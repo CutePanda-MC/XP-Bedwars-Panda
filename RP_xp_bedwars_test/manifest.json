@@ -1,0 +1,26 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§5test §6资源包§r!",
+        "description": "由 B站@一只卑微的量筒 制作原包，由 B站@CutePanda-MC 制作此改版",
+        "uuid": "89fb5220-cd41-4447-a5b3-533b05b524a3",
+        "version": [ 1, 0, 4 ],
+        "min_engine_version": [ 1, 21, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "57b2ec67-ec35-4c7c-8460-e0121c0d9ed1",
+            "version": [ 1, 0, 4 ]
+        }
+    ],
+    "metadata": {
+        "authors": [ "Panda" ]
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.11.0"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:upgrade_health_boost_tier_2",
+            "menu_category": { "category": "items", "is_hidden_in_commands": false }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "§a生命提升"
+            },
+            "minecraft:icon": "bedwars_upgrade_health_boost"
+        }
+    }
+}
